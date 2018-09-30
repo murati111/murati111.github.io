@@ -50,7 +50,9 @@ header h2{
 /*---------------------
 スマホ用メニュー
 -----------------------*/
-
+#smt_menu{
+    display: none;
+}
 /*---スマホ用---*/
 @media screen and (max-width:480px){
     #smt_menu{
