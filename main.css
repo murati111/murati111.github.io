@@ -46,9 +46,9 @@ header h2{
         right: 12px;
         top: 110px;
     }
-    #menu_btn{
-        display: none;
-    }
+}
+#menu_btn{
+    display: none;
 }
 /*---------------------
 スマホ用メニュー
