@@ -1,0 +1,148 @@
+/*---------------------
+全体
+-----------------------*/
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+@media screen and(max-width:480px){
+    body{
+        position: relative;
+        right: 0;
+        overflow: hidden;
+    }
+}
+/*---------------------
+ヘッダー
+-----------------------*/
+header{
+    padding: 1px;
+    height: 250px;
+    text-align: center;
+    background-color: black;
+}
+header h1,
+header h2{
+    color: white;
+    position: relative;
+    top: 50px;
+}
+
+/*---スマホ用---*/
+@media screen and (max-width:480px){
+    header{
+        height: 150px;
+    }
+    header h1,
+    header h2{
+        position: static;
+    }
+    #menu_btn{
+        display: block;
+        width: 33px;
+        position: absolute;
+        right: 12px;
+        top: 110px;
+    }
+}
+/*---------------------
+スマホ用メニュー
+-----------------------*/
+
+/*---スマホ用---*/
+@media screen and (max-width:480px){
+    #smt_menu{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -240px;
+        width: 240px;
+        height: 100%;
+        background: rgb(74, 81, 97);
+    }
+}
+/*---------------------
+コンテンツ
+-----------------------*/
+#contents{
+    margin: 100px auto;
+    width: 1100px;
+}
+/*---スマホ用---*/
+@media screen and(max-width:480px){
+    #contents{
+        width: 100%;
+        margin: 0;
+    }
+}
+/*---------------------
+メインコンテンツ
+-----------------------*/
+main{
+    padding: 30px 40px;
+    width: 700px;
+    border: 2px solid black;
+    float: left;
+}
+img{
+    width: 100%;
+}
+/*---スマホ用---*/
+@media screen and(max-width:480px){
+    main{
+        width: auto;
+        margin: 0;
+        padding: 10px;
+        border: none;
+    }
+}
+/*---------------------
+サイド
+-----------------------*/
+aside{
+    width: 240px;
+    float: right;
+}
+#pc_menu{
+    padding: 50px 0;
+    border: 2px solid black;
+}
+#pc_menu h3{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    margin-top: 10px;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
+ul a:hover{
+    color: blue;
+}
+.clear{
+    clear: both;
+}
+/*---スマホ用---*/
+@media screen and (max-width:480px){
+    aside{
+        display: none;
+    }
+}
+/*---------------------
+フッター
+-----------------------*/
+footer{
+    height: 50px;
+    text-align: center;
+    background-color: black;
+}
+footer p{
+    color: white;
+    line-height: 50px;
+}

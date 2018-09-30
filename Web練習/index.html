@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>プロンティの伝説</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>プロンティの伝説</h1>
+        <h2>公式攻略サイト</h2>
+        <div id="smt_menu_btn">
+            <img src="images/smt_menu.png" id="menu_btn">
+        </div>
+    </header>
+    <dev id="smt_menu">
+        <h3>メニュー</h3>
+        <ul>
+            <li><a href="">ステージ１　草原</a></li>
+            <li><a href="">ステージ２　砂漠</a></li>
+            <li><a href="">ステージ３　雪山</a></li>
+            <li><a href="">ステージ４　森</a></li>
+            <li><a href="">ステージ５　海岸</a></li>
+            <li><a href="">ステージ６　火山</a></li>
+        </ul>
+    <div id="contents">
+        <main>
+            <h1>ステージ１　草原</h1>
+            <img src="images/grassland.jpg">
+            <h2>概要</h2>
+            <p>このステージは、だだっ広い草原だ。緑の草がたくさん生えている。昼食を食べた後にここで寝るととても気持ちがいいだろう。幸いなことに、ここにはそれほど強いモンスターは現れない。弱いモンスターをたくさん倒して経験値を稼ごう。</p>
+
+            <h2>デスモグラ</h2>
+            <p>草原の真ん中に、地下へ通じるトンネルがある。そこを進んで行くと、デスモグラのテリトリーがある。このテリトリーに入ると、怒ったデスモグラの集団が襲いかかってくるので、その前にHPを回復し、装備を整えておこう。準備が整ったら、いよいよデスモグラとの戦いに挑もう！</p>
+
+            <h2>ボス戦</h2>
+            <p>草原の奥の方に進むと、原発事故で漏れ出た放射線の影響で巨大化し、凶暴化したトムソンガゼルが現れる。トムソンガゼルは普通は草食だが、この放射線を浴びて突然変異を起こしたトムソンガゼルは肉食だ。このトムソンガゼルはとても素早いので、動体視力のレベルが低いと動きを目で追うことができない。動体視力のレベルを最低５まであげておこう。トムソンガゼルは炎タイプに弱いので、前の村で火炎放射器を必ず買っておこう。</p> 
+        </main>
+        <aside>
+            <div id="pc_menu">
+                <h3>メニュー</h3>
+                <ul>
+                    <li><a href="">ステージ１　草原</a></li>
+                    <li><a href="">ステージ２　砂漠</a></li>
+                    <li><a href="">ステージ３　雪山</a></li>
+                    <li><a href="">ステージ４　森</a></li>
+                    <li><a href="">ステージ５　海岸</a></li>
+                    <li><a href="">ステージ６　火山</a></li>
+                </ul>
+            </div>
+        </aside>
+        <div class="clear"></div>
+    </div>
+    <footer>
+        <p>© ProntiatVR</p>
+    </footer>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css" media="screen, projection, print">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(function(){
+var menu = $('#smt_menu'), // スライドインするメニューを指定
+  menuBtn = $('#smt_menu_btn'), // トリガーとなるボタンを指定
+  body = $(document.body),
+  menuWidth = menu.outerWidth();
+  menuBtn.on('click', function(){
+     body.toggleClass('open');
+      if(body.hasClass('open')){
+          body.animate({'right' : menuWidth }, 200);
+          menu.animate({'right' : 0 }, 200);
+      } else {
+          menu.animate({'right' : -menuWidth }, 200);
+          body.animate({'right' : 0 }, 200);
+    }
+  });
+});
+</script>
+</body>
+</html>
